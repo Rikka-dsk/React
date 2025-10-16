@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-family: 'poppins';
+}
+
+.login-container{
+    background: url('../assets/IMG_20251016_160423_314.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    z-index: -1;
+}
+
+.login-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.189);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    
+}
+
+.login-box h1{
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    margin: 25px;
+}
+.login-form{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-wrap{ 
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    width: 85%;
+    height: 55px;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+
+input{
+    background: transparent;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    width: 85%;
+    padding: 10px 5px;
+}
+input::placeholder{
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    padding: 10px 5px;
+}
+
+.input-wrap i{ 
+    font-size: 1.2rem;
+    padding: 0 20px;
+    color: white;
+}
+
+button{ 
+    font-size: 1.2rem;
+    height: 55px;
+    border-radius: 50px;
+    width: 90%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 25px;
+}
+
