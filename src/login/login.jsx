@@ -17,7 +17,7 @@ function Login() {
    <div className="login-container">
     <div className="login-box">
       <h1 className="login-title">登录</h1>
-      <div onSubmit={handleLogin} className="login-form">
+      <form onSubmit={handleLogin} className="login-form">
         <div className="input-wrap">
           <input
           type="text"
@@ -36,10 +36,21 @@ function Login() {
           onChange={(e) => setPassword(e.target.value)}
         />
         <i className="fa-solid fa-lock"></i>
-        </div>
         
-        <button type="submit">登录</button>
-      </div>
+        </div>
+        <div className='rem'>
+          <p className='rema'>
+            <input type="checkbox" />
+            记住我
+          </p>
+          <p className='remb'>
+            <a>忘记密码?</a>
+          </p>
+        </div>
+        <button type="submit">login</button>
+        
+        
+      </form>
     </div></div>
 
       

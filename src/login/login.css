@@ -10,7 +10,7 @@
 }
 
 .login-container{
-    background: url('../assets/IMG_20251016_160423_314.jpg');
+    background: url('../assets/7AE96B58324A83827AC243077339AC94.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -30,14 +30,14 @@
     width: 30%;
     background-color: rgba(255, 255, 255, 0.189);
     backdrop-filter: blur(10px);
-    border-radius: 10px;
+    border-radius: 25px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     
 }
 
 .login-box h1{
     font-size: 2.5rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin: 25px;
 }
 .login-form{ 
@@ -68,7 +68,7 @@ input{
 }
 input::placeholder{
     font-size: 1.2rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 10px 5px;
 }
 
@@ -78,7 +78,33 @@ input::placeholder{
     color: white;
 }
 
-button{ 
+.rem input{
+    width: auto;
+}
+
+
+.rem{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin-bottom: 25px;
+    justify-content: space-between;
+
+}
+
+.rema{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+
+}
+.remb{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+button{
+    color: #000000; 
     font-size: 1.2rem;
     height: 55px;
     border-radius: 50px;
@@ -88,3 +114,6 @@ button{
     margin: 25px;
 }
 
+button:hover{ 
+    background-color: rgb(205, 205, 205);
+}
