@@ -1,17 +1,18 @@
 
-import './login/login.jsx';
 import Login from './login/login.jsx';
+import Home from './home/home.jsx';
+import { Routes, Route } from 'react-router-dom';
 
 
-function App() {
+const App = () => {
   
 
   return (
-    <>
-      <div>
-        <Login />
-      </div>
-    </>
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/home" element={<Home />} />
+    </Routes>
+
   );
 }
 
