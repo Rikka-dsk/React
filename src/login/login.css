@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-family: 'poppins';
+}
+
+.login-container{
+    background: url('../assets/2B2DFD6686D03684DC80F704169358BE.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    z-index: -1;
+}
+
+.login-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.189);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    position: relative;
+    height: 450px;
+}
+
+.login-box h1{
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    margin: 25px;
+}
+.login-form{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-wrap{ 
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    width: 85%;
+    height: 45px;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+
+input{
+    background: transparent;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    width: 85%;
+    padding: 10px 5px;
+}
+input::placeholder{
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    padding: 10px 5px;
+}
+
+.input-wrap i{ 
+    font-size: 1.2rem;
+    padding: 0 20px;
+    color: white;
+}
+
+.rem input{
+    width: auto;
+}
+
+
+.rem{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin-bottom: 25px;
+    justify-content: space-between;
+
+}
+
+.rema{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+
+}
+.remb{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+button{
+    color: #000000; 
+    font-size: 1.2rem;
+    height: 55px;
+    border-radius: 50px;
+    width: 90%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 25px;
+}
+
+button:hover{ 
+    background-color: rgb(205, 205, 205);
+}
+
+.login,.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.register{
+    position: absolute;
+    left:100%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.login{
+    position: absolute;
+    left:0;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+.login.swapped{
+    left:100%;
+    opacity: 0;
+}
+.register.swapped{ 
+    left:0;
+    opacity: 1;
+}
+.but{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
